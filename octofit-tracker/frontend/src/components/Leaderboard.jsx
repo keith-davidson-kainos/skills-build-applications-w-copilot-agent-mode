@@ -6,7 +6,7 @@ function Leaderboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // API_BASE_URL is defined in apiConfig.js and points to the backend server -8000.app.github.dev/api/activities
+  // API_BASE_URL is defined in apiConfig.js and points to the backend server -8000.app.github.dev/api/leaderboard
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/leaderboard/`)
       .then((res) => {
